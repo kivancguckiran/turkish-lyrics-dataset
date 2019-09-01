@@ -1,0 +1,1 @@
+const baseURL = 'https://www.sarkininsozu.com/alfabe/A';

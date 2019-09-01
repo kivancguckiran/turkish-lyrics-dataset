@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# custom
+singers.json
+songs.json
+lyrics/
+lyrics-fixed/
+lyrics-tur/
