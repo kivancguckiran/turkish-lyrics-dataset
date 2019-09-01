@@ -154,10 +154,10 @@ const getLyrics = async (start = 0) => {
 
 (async () => {
   try {
-    // await getSingers();
-    // await createFolders();
-    // await getSongs();
-    await getLyrics(228);
+    await getSingers();
+    await createFolders();
+    await getSongs();
+    await getLyrics(0);
   } catch (err) {
     console.log(err);
   }
