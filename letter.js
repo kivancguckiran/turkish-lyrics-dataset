@@ -6,7 +6,7 @@ const fix = () => {
   console.log('Started');
 
   const folders = fs.readdirSync('lyrics-tur');
-  for (let i = 0; i < folders.length; i++) {
+  for (let i = 0; i < folders.length; i += 1) {
     const files = fs.readdirSync(`lyrics-tur/${folders[i]}`);
     for (let j = 0; j < files.length; j += 1) {
       let file = fs.readFileSync(`lyrics-tur/${folders[i]}/${files[j]}`).toString();

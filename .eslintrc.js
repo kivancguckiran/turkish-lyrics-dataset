@@ -15,5 +15,9 @@ module.exports = {
     ecmaVersion: 2018,
   },
   rules: {
+    'no-console': 'off',
+    'no-continue': 'off',
+    'no-constant-condition': 'off',
+    'no-await-in-loop': 'off',
   },
 };

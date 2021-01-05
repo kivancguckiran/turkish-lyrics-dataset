@@ -20,7 +20,7 @@ const getSingers = async () => {
       .children()
       .children()
       .each((index, elem) => {
-        if (elem.name === 'a') singers.push(elem.attribs.href)
+        if (elem.name === 'a') singers.push(elem.attribs.href);
       });
 
     await sleep(10);
@@ -50,7 +50,7 @@ const createFolders = async () => {
       fs.mkdir(`lyrics/${singer}`, (err) => {
         if (err) reject(err);
         else resolve();
-      })
+      });
     });
   }
 };
@@ -77,7 +77,7 @@ const getSongs = async () => {
     $('.list-line')
       .children()
       .each((index, elem) => {
-        if (elem.name === 'a') songs.push(elem.attribs.href)
+        if (elem.name === 'a') songs.push(elem.attribs.href);
       });
 
     allSongs.push({
@@ -130,7 +130,7 @@ const getLyrics = async (start = 0) => {
         .children()
         .each((index, elem) => {
           if (elem.name === 'p') {
-            elem.children.forEach(item => {
+            elem.children.forEach((item) => {
               if (item.type === 'text') rows = `${rows}${item.data.trim()}\n`;
             });
 
